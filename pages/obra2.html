@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoción Kit 2</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!-- Fuentes personalizadas -->
+    <style>
+        @font-face {
+            font-family: 'OutlineFortuneKei';
+            src: url('../assets/fonts/2020OutlineFortuneKei.ttf') format('truetype');
+        }
+
+        /* Estilo para el título con fondo sombreado */
+        .promo-title {
+            font-family: 'OutlineFortuneKei', sans-serif;
+            font-size: 3rem;
+            color: white;
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Sección de imágenes con fondo negro */
+        .images-section {
+            background-color: black;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Estilo para las imágenes en fila */
+        .promo-image, .creabox-image {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .promo-image:hover, .creabox-image:hover {
+            transform: scale(1.1); /* Zoom al pasar el mouse */
+        }
+
+        /* Estilos para el texto descriptivo */
+        .description-text {
+            font-size: 1.25rem;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Estilos para el botón */
+        .btn-back {
+            font-family: Arial, sans-serif;
+            font-size: 1.2rem;
+            color: white;
+            background-image: url('../assets/img/botonpaisaje2.png');
+            background-size: cover;
+            background-position: center;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efecto de flotación al pasar el mouse */
+        .btn-back:hover {
+            transform: translateY(-5px) scale(1.05); /* Efecto de elevar y agrandar */
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para efecto de flotación */
+        }
+    </style>
+</head>
+<body class="text-center">
+
+    <!-- Título sombreado -->
+    <h1 class="promo-title">PROMOCIÓN KIT 2</h1>
+
+    <!-- Sección de imágenes con fondo negro -->
+    <div class="container images-section">
+        <div class="row">
+            <!-- Imagen del Kit 2 -->
+            <div class="col-md-6">
+                <img src="../assets/img/kit2.jpg" class="promo-image" alt="Kit de arte 2">
+            </div>
+            <!-- Imagen de Creabox -->
+            <div class="col-md-6">
+                <img src="../assets/img/creabox.jpg" class="creabox-image" alt="Creabox Imagen">
+            </div>
+        </div>
+    </div>
+
+    <!-- Texto descriptivo debajo de las imágenes -->
+    <div class="container description-text">
+        Hermosa colección de útiles necesarios para crear las mejores obras de arte a colores ultrarrealistas.
+    </div>
+    
+    <!-- Botón para retroceder a la página anterior -->
+    <div>
+        <a href="../index.html" class="btn-back">Retroceder a la página anterior</a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

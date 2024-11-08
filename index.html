@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de Arte - Página Oficial</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Fuentes personalizadas -->
+    <style>
+        @font-face {
+            font-family: 'OutlineFortuneKei';
+            src: url('assets/fonts/2020OutlineFortuneKei.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'FontTitle2';
+            src: url('assets/fonts/fontTittle2.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Abandon';
+            src: url('../assets/fonts/abandon.ttf') format('truetype'); 
+        }
+        @font-face {
+            font-family: 'BScript';
+            src: url('../assets/fonts/BScript.otf') format('opentype');
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título con fuente personalizada -->
+    <header class="container text-center my-5 hero-section">
+        <h1 class="display-4 hero-title" style="font-family: 'OutlineFortuneKei';">Kit de Arte Exclusivo</h1>
+        <img src="assets/img/logo.png" alt="Logo" class="img-fluid my-3 logo-zoom" style="max-width: 200px;">
+    </header>
+
+    <!-- Reproductor de audio con reproducción automática -->
+    <div class="container text-center my-4">
+        <audio id="audio-player" controls autoplay>
+            <source src="assets/music/track.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Columna de la imagen -->
+            <div class="col-md-6">
+                <img src="assets/img/texto_fondo_bn.jpg" class="img-fluid" alt="Imagen de fondo de texto">
+            </div>
+            <!-- Columna de texto alineado a la derecha -->
+            <div class="col-md-6 text-end creative-section">
+                <p class="creative-text">Inspira tu creatividad, construye tus sueños.</p>
+                <p class="creative-text">Con nuestra caja creativa podrás:</p>
+                <ul class="list-unstyled creative-text">
+                    <li>Darles un toque personal a tus útiles</li>
+                    <li>Fomentar tu creatividad</li>
+                    <li>Crear proyectos de arte</li>
+                    <li>Crear tarjetas de agradecimiento</li>
+                    <li>Experimentar con diseño</li>
+                    <li>Además, podrás personalizar nuestra caja</li>
+                    <li>¡Y muchos más!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- Galería de imágenes de obras de arte con fondo negro -->
+<div class="container my-5" style="background-color: black; padding: 20px; border-radius: 10px;">
+    <h2 class="gallery-title">OBRAS HECHAS CON NUESTRO KIT</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="pages/obra1.html"><img src="assets/img/obra1.jpg" class="img-fluid obra-img" alt="Obra 1"></a>
+        </div>
+        <div class="col-md-6">
+            <a href="pages/obra2.html"><img src="assets/img/obra2.jpg" class="img-fluid obra-img" alt="Obra 2"></a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Sección del kit de arte con fuente personalizada para título y precio -->
+    <div class="container my-5 text-center">
+        <h2 class="my-4 kit-title">Kit de Arte Completo</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <img src="assets/img/kit1.jpg" class="img-fluid kit-image" alt="Kit de arte 1">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/kit2.jpg" class="img-fluid kit-image" alt="Kit de arte 2">
+            </div>
+        </div>
+        <p class="h4 mt-3 kit-price">Precio: S/ 199.00</p>
+    </div>
+    
+
+    <!-- Footer de la sección de contacto -->
+<footer class="bg-light py-4">
+    <!-- Contenedor del reloj -->
+    <div class="container text-center mt-3">
+        <div id="clock" class="clock"></div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 text-start">
+                <h3>Contacto</h3>
+                <p>Al Grupo Pamer de Kit de Arte</p>
+                <p>Teléfono: +51 915 343 136</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <p>Email: kiara.sophia.pc@gmail.com</p>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <div class="logo-container">
+                <img src="assets/img/plin.png" alt="Plin" class="logo-pago" id="plin-logo">
+                <div id="plin-barcode" class="barcode">
+                    <img src="assets/img/plin-barcode.png" alt="Código de Barras Plin">
+                </div>
+            </div>
+            <div class="logo-container">
+                <img src="assets/img/yape.png" alt="Yape" class="logo-pago" id="yape-logo">
+                <div id="yape-barcode" class="barcode">
+                    <img src="assets/img/yape-barcode.png" alt="Código de Barras Yape">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- CSS y JavaScript específicos para el footer de contacto -->
+<link rel="stylesheet" href="assets/css/contact.css">
+<script src="assets/js/contact.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

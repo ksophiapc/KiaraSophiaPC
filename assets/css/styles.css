@@ -1,0 +1,110 @@
+/* Estilos personalizados */
+/* Estilo para la sección del título con fondo negro y texto blanco */
+.hero-section {
+    background-color: black;
+    padding: 40px 0;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Estilo para el título, aumentando tamaño de fuente y aplicando efecto de zoom */
+.hero-title {
+    font-size: 5rem; /* Tamaño de letra más grande */
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-title {
+    font-family: 'Abandon', sans-serif;
+    color: white; /* Para asegurar que se vea bien sobre el fondo negro */
+    text-align: center;
+    font-size: 2.5rem; /* Ajusta el tamaño según prefieras */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+.hero-title:hover {
+    transform: scale(1.2); /* Zoom más pronunciado al pasar el mouse */
+}
+/* Estilo inicial del logo */
+.logo-zoom {
+    transition: transform 0.4s ease-in-out;
+    transform: scale(0.9); /* Reducir ligeramente el tamaño inicial */
+}
+
+/* Efecto de zoom al pasar el mouse */
+.logo-zoom:hover {
+    transform: scale(1.3); /* Zoom grande al pasar el mouse */
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.galeria-img, .obra-img {
+    transition: transform 0.3s ease;
+}
+
+.galeria-img:hover, .obra-img:hover {
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+}
+
+.carousel-inner p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.logo-pago {
+    max-width: 50px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.obra-img {
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+/* Efecto de flotación para la imagen del kit */
+.kit-float {
+    transition: transform 0.3s ease-in-out;
+}
+
+.kit-float:hover {
+    transform: translateY(-10px); /* Flotación */
+}
+/* Título con tamaño de 5rem */
+.kit-title {
+    font-size: 5rem; /* Tamaño de letra grande */
+    font-family: 'FontTitle2', sans-serif;
+}
+
+/* Imagen más pequeña */
+.kit-image {
+    width: 70%; /* Reduce el tamaño de la imagen a un cuarto de su tamaño original */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Precio con tamaño más grande y efecto de zoom al pasar el mouse */
+.kit-price {
+    font-size: 2rem; /* Tamaño del precio un poco más grande */
+    font-family: 'FontTitle2', sans-serif;
+    transition: transform 0.3s ease-in-out; /* Suaviza el zoom */
+}
+
+.kit-price:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+/* Estilos de la sección con fondo gris */
+.creative-section {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos para el texto alineado a la derecha */
+.creative-text {
+    font-family: 'BScript', cursive;
+    font-size: 2.00rem;
+    line-height: 1.6;
+    color: #333; /* Color negro o gris oscuro */
+}

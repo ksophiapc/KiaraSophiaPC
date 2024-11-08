@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obra de Arte Realizada con el Kit</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!-- Fuentes personalizadas -->
+    <style>
+        @font-face {
+            font-family: 'OutlineFortuneKei';
+            src: url('../assets/fonts/2020OutlineFortuneKei.ttf') format('truetype');
+        }
+
+        /* Estilos para el botón */
+        .btn-back {
+            font-family: Arial, sans-serif;
+            font-size: 1.2rem;
+            color: white;
+            background-image: url('../assets/img/botonpaisaje1.png');
+            background-size: cover;
+            background-position: center;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efecto de flotación al pasar el mouse */
+        .btn-back:hover {
+            transform: translateY(-5px) scale(1.05); /* Efecto de elevar y agrandar */
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para efecto de flotación */
+        }
+
+        /* Estilo para la imagen creabox con fondo negro */
+        .creabox-container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        
+        .creabox-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="text-center">
+
+    <div class="container my-5">
+        <h1 style="font-family: 'OutlineFortuneKei';">Esta obra de arte se realizó con</h1>
+        <p class="fst-italic">Gran Kit artistico con el cual puedes hacer cualquier obra y desarrollar tu creatividad.</p>
+        <img src="../assets/img/kit_venta2.jpg" class="img-fluid kit-float mb-4" alt="Kit de arte">
+        
+        <!-- Imagen creabox con fondo negro -->
+        <div class="creabox-container mb-4">
+            <img src="../assets/img/creabox.jpg" alt="Creabox Imagen">
+        </div>
+        
+        <!-- Botón para retroceder a la página anterior -->
+        <div>
+            <a href="../index.html" class="btn-back">Retroceder a la página anterior</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

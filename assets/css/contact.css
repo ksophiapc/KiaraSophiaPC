@@ -1,0 +1,38 @@
+/* Estilo inicial para logos de pago */
+.logo-container {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    text-align: center;
+}
+
+.logo-pago {
+    max-width: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de zoom en el logo */
+.logo-pago:hover {
+    transform: scale(1.2);
+}
+
+/* Ocultar los códigos de barras por defecto */
+.barcode {
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    top: 60px; /* Asegúrate de ajustar esta distancia si es necesario */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.barcode img {
+    max-width: 100px;
+}
+/* Estilo para el reloj */
+.clock {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
